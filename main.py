@@ -1,4 +1,5 @@
 def geron(s):
+    # Формула Герона
     a, b, c = s[0], s[1], s[2]
     p = (a + b + c) / 2
     return (p * (p - a) * (p - b) * (p - c)) ** 0.5
@@ -8,7 +9,7 @@ sides = [3, 2, 4, 7, 5, 12, 11, 13, 15, 16, 14, 14]
 n = len(sides)
 max_sides = 0, 0, 0
 max_s = 0
-
+# Перебор всех сторон
 for i in range(n):
     for j in range(n):
         if i != j:
@@ -20,4 +21,5 @@ for i in range(n):
                         if max_s < r:
                             max_s = r
                             max_sides = ch_sides
-print(max_sides, max_s)
+for i in max_sides:
+    print(i, end=" ")
