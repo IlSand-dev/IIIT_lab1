@@ -6,7 +6,7 @@ if d > 0:
     x2 = (-b - d ** 0.5) / 2 * a
     print(x1, x2)
 elif d == 0:
-    x = -b / 2 * a
+    x = (-b) / 2 * a
     print(x)
 else:
     print('Корней нет')
